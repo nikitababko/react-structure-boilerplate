@@ -1,0 +1,43 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "rules": {
+        "@typescript-eslint/no-shadow": [
+          "error"
+        ],
+        "no-shadow": "off",
+        "no-undef": "off",
+        "no-magic-numbers": "warn",
+        "no-unused-vars": "warn",
+        "no-console": "warn",
+        "no-alert": "warn",
+        "no-empty-function": "warn",
+        "no-unused-expressions": "warn",
+        "no-unused-labels": "warn",
+        "no-trailing-spaces": "warn",
+        "no-eval": "warn",
+        "jsx-quotes": [
+          2,
+          "prefer-double"
+        ],
+        "prefer-const": "warn",
+        "sort-keys": "warn",
+        "curly": "warn"
+      }
+    }
+  ]
+}
