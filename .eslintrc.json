@@ -30,13 +30,31 @@
         "no-unused-labels": "warn",
         "no-trailing-spaces": "warn",
         "no-eval": "warn",
+        "no-duplicate-imports": "warn",
+        "no-dupe-keys": "warn",
+        "no-dupe-args": "warn",
+        "no-dupe-else-if": "warn",
+        "no-func-assign": "warn",
+        "no-use-before-define": "warn",
+        "no-multiple-empty-lines": "warn",
+        "no-multi-spaces": "warn",
         "jsx-quotes": [
           2,
           "prefer-double"
         ],
         "prefer-const": "warn",
         "sort-keys": "warn",
-        "curly": "warn"
+        "curly": "warn",
+        "use-isnan": "warn",
+        "spaced-comment": "warn",
+        "yoda": "warn",
+        "semi": "warn",
+        "semi-spacing": "warn",
+        "rest-spread-spacing": "warn",
+        "space-before-blocks": "warn",
+        "space-unary-ops": "warn",
+        "wrap-regex": "warn",
+        "wrap-iife": "warn"
       }
     }
   ]

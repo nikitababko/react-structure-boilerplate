@@ -6,13 +6,12 @@ import { Image } from '../UI/Image';
 import { Container } from './Header.styles';
 
 export const Header: React.FC = () => {
-  const arr = [
-    {
-      id: 1,
-    },
-  ];
+  const color = 'red';
+  const arr = [1, 2];
+  const newArr = [...arr];
 
-  if (arr.length > 1) {
+  if (color === 'red') {
+    const a = 4;
     console.log('ASD');
   }
 
