@@ -1,14 +1,13 @@
 import React from 'react';
 import { Header } from '../Header';
-import { LocalStorageService } from '../../services/LocalStorage/LocalStorage.service';
+
+import { Container } from './App.styles';
 
 function App() {
-  console.log(LocalStorageService.getItem('10'));
-
   return (
-    <div className="App">
+    <Container>
       <Header />
-    </div>
+    </Container>
   );
 }
 

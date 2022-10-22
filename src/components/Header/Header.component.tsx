@@ -6,15 +6,6 @@ import { Image } from '../UI/Image';
 import { Container } from './Header.styles';
 
 export const Header: React.FC = () => {
-  const color = 'red';
-  const arr = [1, 2];
-  const newArr = [...arr];
-
-  if (color === 'red') {
-    const a = 4;
-    console.log('ASD');
-  }
-
   return (
     <Container>
       <Image

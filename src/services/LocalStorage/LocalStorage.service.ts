@@ -1,18 +1,23 @@
+import {
+  LocalStorageServiceGetItemType,
+  LocalStorageServiceSetItemType,
+} from './LocalStorage.types';
+
 class Service {
-  public getItem = (key: string) => {
+  public getItem: LocalStorageServiceGetItemType = key => {
     return localStorage.getItem(key);
   };
 
-  public setItem = (key: string, value: string) => {
-    return localStorage.setItem(key, value);
+  public setItem: LocalStorageServiceSetItemType = (key, value) => {
+    localStorage.setItem(key, value);
   };
 
   public clearAllItems = () => {
-    return localStorage.clear();
+    localStorage.clear();
   };
 
   public removeItem = (key: string) => {
-    return localStorage.removeItem(key);
+    localStorage.removeItem(key);
   };
 }
 

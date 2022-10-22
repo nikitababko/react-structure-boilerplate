@@ -1,5 +1,6 @@
-export type LocalStorageGetType = (key: string) => string | null;
+export type LocalStorageServiceGetItemType = (key: string) => string | null;
 
-export type LocalStorageType = {
-  get: LocalStorageGetType;
-};
+export type LocalStorageServiceSetItemType = (
+  key: string,
+  value: string,
+) => void;
