@@ -1,9 +1,10 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
+import Enzyme from 'enzyme';
+
 import App from './App.component';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('App', () => {
+  it('Render component', async () => {
+    const component = Enzyme.shallow(<App />);
+    expect(component.exists()).toBe(true);
+  });
 });

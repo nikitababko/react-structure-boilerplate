@@ -1,0 +1,21 @@
+{
+  "preset": "ts-jest",
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.ts"
+  ],
+  "transformIgnorePatterns": [
+    "node_modules/(?!(sucrase)/)"
+  ],
+  "transform": {
+    "^.+\\.(ts|tsx)?$": "ts-jest",
+    "^.+\\.(js|jsx)$": "babel-jest"
+  },
+  "testEnvironment": "node",
+  "moduleDirectories": [
+    "node_modules",
+    "src"
+  ],
+  "moduleNameMapper": {
+    ".+\\.(svg|png|jpg)$": "identity-obj-proxy"
+  }
+}
