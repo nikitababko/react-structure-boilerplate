@@ -1,6 +1,6 @@
 {
   "name": "react-structure-boilerplate",
-  "version": "0.1.0",
+  "version": "0.1.1-0",
   "private": true,
   "author": "Nikita Babko <niki.babko@gmail.com>",
   "scripts": {
@@ -8,7 +8,13 @@
     "build": "react-scripts build",
     "test:unit": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "npx husky install",
+    "pre:commit": "yarn test:unit && yarn v:pr",
+    "v:pr": "npm --no-git-tag-version version prerelease",
+    "v:patch": "npm --no-git-tag-version version patch",
+    "v:minor": "npm --no-git-tag-version version minor",
+    "v:major": "npm --no-git-tag-version version major"
   },
   "eslintIgnore": [
     "*.test.ts",
@@ -52,6 +58,7 @@
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.2",
     "identity-obj-proxy": "^3.0.0",
     "ts-jest": "^29.0.3"
   }
